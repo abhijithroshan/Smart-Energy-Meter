@@ -2,12 +2,12 @@
 #include "ThingSpeak.h"
 
 // WiFi details
-const char* ssid = "YOUR_WIFI_NAME";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "MyHomeWiFi";         // your Wi-Fi name
+const char* password = "12345678";       // your Wi-Fi password
 
 // ThingSpeak details
-unsigned long channelID = YOUR_CHANNEL_ID;
-const char* writeAPIKey = "YOUR_WRITE_API_KEY";
+unsigned long channelID = 1234567;       // your ThingSpeak channel ID
+const char* writeAPIKey = "ABCDEF1234567890";  // your ThingSpeak Write API Key
 
 WiFiClient client;
 
@@ -39,3 +39,4 @@ void loop() {
 
   delay(20000);  // update every 20 seconds
 }
+
